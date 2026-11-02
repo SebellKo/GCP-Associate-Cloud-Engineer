@@ -1,0 +1,546 @@
+[
+  {
+    "id": 1,
+    "domain": 1,
+    "correct": [
+      "A"
+    ],
+    "chapter": 3,
+    "options": 4
+  },
+  {
+    "id": 2,
+    "domain": 1,
+    "correct": [
+      "B"
+    ],
+    "chapter": 3,
+    "options": 4
+  },
+  {
+    "id": 3,
+    "domain": 1,
+    "correct": [
+      "A"
+    ],
+    "chapter": 3,
+    "options": 4
+  },
+  {
+    "id": 4,
+    "domain": 1,
+    "correct": [
+      "D"
+    ],
+    "chapter": 4,
+    "options": 4
+  },
+  {
+    "id": 5,
+    "domain": 1,
+    "correct": [
+      "A",
+      "C"
+    ],
+    "chapter": 5,
+    "options": 5
+  },
+  {
+    "id": 6,
+    "domain": 1,
+    "correct": [
+      "D"
+    ],
+    "chapter": 5,
+    "options": 4
+  },
+  {
+    "id": 7,
+    "domain": 1,
+    "correct": [
+      "B"
+    ],
+    "chapter": 6,
+    "options": 4
+  },
+  {
+    "id": 8,
+    "domain": 1,
+    "correct": [
+      "A"
+    ],
+    "chapter": 6,
+    "options": 4
+  },
+  {
+    "id": 9,
+    "domain": 1,
+    "correct": [
+      "B"
+    ],
+    "chapter": 6,
+    "options": 4
+  },
+  {
+    "id": 10,
+    "domain": 1,
+    "correct": [
+      "B"
+    ],
+    "chapter": 5,
+    "options": 4
+  },
+  {
+    "id": 11,
+    "domain": 1,
+    "correct": [
+      "B"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 12,
+    "domain": 1,
+    "correct": [
+      "A"
+    ],
+    "chapter": 5,
+    "options": 4
+  },
+  {
+    "id": 13,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 9,
+    "options": 4
+  },
+  {
+    "id": 14,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 9,
+    "options": 4
+  },
+  {
+    "id": 15,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 8,
+    "options": 4
+  },
+  {
+    "id": 16,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 10,
+    "options": 4
+  },
+  {
+    "id": 17,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 12,
+    "options": 4
+  },
+  {
+    "id": 18,
+    "domain": 2,
+    "correct": [
+      "B"
+    ],
+    "chapter": 11,
+    "options": 4
+  },
+  {
+    "id": 19,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 12,
+    "options": 4
+  },
+  {
+    "id": 20,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 12,
+    "options": 4
+  },
+  {
+    "id": 21,
+    "domain": 2,
+    "correct": [
+      "D"
+    ],
+    "chapter": 12,
+    "options": 4
+  },
+  {
+    "id": 22,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 15,
+    "options": 4
+  },
+  {
+    "id": 23,
+    "domain": 2,
+    "correct": [
+      "B",
+      "E"
+    ],
+    "chapter": 15,
+    "options": 5
+  },
+  {
+    "id": 24,
+    "domain": 2,
+    "correct": [
+      "B"
+    ],
+    "chapter": 15,
+    "options": 4
+  },
+  {
+    "id": 25,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 14,
+    "options": 4
+  },
+  {
+    "id": 26,
+    "domain": 2,
+    "correct": [
+      "B"
+    ],
+    "chapter": 13,
+    "options": 4
+  },
+  {
+    "id": 27,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 13,
+    "options": 4
+  },
+  {
+    "id": 28,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 20,
+    "options": 4
+  },
+  {
+    "id": 29,
+    "domain": 2,
+    "correct": [
+      "C"
+    ],
+    "chapter": 20,
+    "options": 4
+  },
+  {
+    "id": 30,
+    "domain": 2,
+    "correct": [
+      "A"
+    ],
+    "chapter": 18,
+    "options": 4
+  },
+  {
+    "id": 31,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 9,
+    "options": 4
+  },
+  {
+    "id": 32,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 9,
+    "options": 4
+  },
+  {
+    "id": 33,
+    "domain": 3,
+    "correct": [
+      "A"
+    ],
+    "chapter": 8,
+    "options": 4
+  },
+  {
+    "id": 34,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 17,
+    "options": 4
+  },
+  {
+    "id": 35,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 17,
+    "options": 4
+  },
+  {
+    "id": 36,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 16,
+    "options": 4
+  },
+  {
+    "id": 37,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 19,
+    "options": 4
+  },
+  {
+    "id": 38,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 11,
+    "options": 4
+  },
+  {
+    "id": 39,
+    "domain": 3,
+    "correct": [
+      "A",
+      "E"
+    ],
+    "chapter": 12,
+    "options": 5
+  },
+  {
+    "id": 40,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 12,
+    "options": 4
+  },
+  {
+    "id": 41,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 13,
+    "options": 4
+  },
+  {
+    "id": 42,
+    "domain": 3,
+    "correct": [
+      "A"
+    ],
+    "chapter": 14,
+    "options": 4
+  },
+  {
+    "id": 43,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 21,
+    "options": 4
+  },
+  {
+    "id": 44,
+    "domain": 3,
+    "correct": [
+      "D"
+    ],
+    "chapter": 22,
+    "options": 4
+  },
+  {
+    "id": 45,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 23,
+    "options": 4
+  },
+  {
+    "id": 46,
+    "domain": 3,
+    "correct": [
+      "B"
+    ],
+    "chapter": 21,
+    "options": 4
+  },
+  {
+    "id": 47,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 23,
+    "options": 4
+  },
+  {
+    "id": 48,
+    "domain": 3,
+    "correct": [
+      "C"
+    ],
+    "chapter": 23,
+    "options": 4
+  },
+  {
+    "id": 49,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 24,
+    "options": 4
+  },
+  {
+    "id": 50,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 24,
+    "options": 4
+  },
+  {
+    "id": 51,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 52,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 53,
+    "domain": 4,
+    "correct": [
+      "A"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 54,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 55,
+    "domain": 4,
+    "correct": [
+      "D"
+    ],
+    "chapter": 25,
+    "options": 4
+  },
+  {
+    "id": 56,
+    "domain": 4,
+    "correct": [
+      "C"
+    ],
+    "chapter": 26,
+    "options": 4
+  },
+  {
+    "id": 57,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 26,
+    "options": 4
+  },
+  {
+    "id": 58,
+    "domain": 4,
+    "correct": [
+      "B",
+      "C"
+    ],
+    "chapter": 25,
+    "options": 5
+  },
+  {
+    "id": 59,
+    "domain": 4,
+    "correct": [
+      "B"
+    ],
+    "chapter": 24,
+    "options": 4
+  },
+  {
+    "id": 60,
+    "domain": 4,
+    "correct": [
+      "D"
+    ],
+    "chapter": 24,
+    "options": 4
+  }
+]

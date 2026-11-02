@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ace-lab
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ace-web
+  namespace: ace-lab
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ace-web
+  template:
+    metadata:
+      labels:
+        app: ace-web
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.28-alpine
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 250m
+              memory: 512Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 3
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ace-web
+  namespace: ace-lab
+spec:
+  type: ClusterIP
+  selector:
+    app: ace-web
+  ports:
+    - port: 80
+      targetPort: 80

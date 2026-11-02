@@ -1,0 +1,14 @@
+# Local credentials, state and build outputs
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*.json
+terraform.tfstate*
+*.tfplan
+.terraform/
+*.tfvars
+!*.tfvars.example
+labs/app/server
+__pycache__/

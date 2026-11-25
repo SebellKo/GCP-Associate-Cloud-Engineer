@@ -13,7 +13,7 @@
 | [x] | 07 Compute Engine VM 생성과 접속 | 2026-11-16 | 시험형 첫 선택 3/3, 개념 문답 확인 | 결제 상태 조회. 외부 IP 없는 VM의 IAP·SSH 접속은 설계로 연습. |
 | [x] | 08 VM 디스크·이미지·스냅샷·복구 | 2026-11-18 | 시험형 첫 선택 3/3, 개념 문답 확인 | 스냅샷으로 원본과 별도인 디스크를 만들어 파일을 검증하는 복원 절차를 설계했다. |
 | [x] | 09 인스턴스 템플릿·MIG·가용성·Spot | 2026-11-18 | 시험형 첫 선택 3/3, 추론 보완 | 부하·앱 장애·존 장애별 MIG와 로드 밸런서 구성을 설계로 연습. 아래 학습 기록 참고. |
-| [ ] | 10 Cloud Storage·수명 주기·파일 스토리지 | | | |
+| [x] | 10 Cloud Storage·수명 주기·파일 스토리지 | 2026-11-25 | 시험형 첫 선택 3/3, 개념 보완 | 저장소·권한·보존 정책을 예시로 연습하고 Lifecycle JSON을 해석했다. 실제 버킷 실습은 미실행. |
 | [ ] | 11 관계형 DB·Cloud SQL·Spanner·AlloyDB | | | |
 | [ ] | 12 Firestore·BigQuery·Bigtable·데이터 파이프라인 | | | |
 | [ ] | 13 VPC·서브넷·라우팅·방화벽 | | | |
@@ -128,4 +128,17 @@
 
 복습할 내용은 Autoscaling의 대수 조정, Autohealing의 VM 재생성, 로드 밸런서의 요청 분배 역할을 구분하는 것이다. Spot VM의 체크포인트 저장·복구 구현 책임도 다시 확인한다.
 
-다음 학습은 [Chapter 10 Cloud Storage·수명 주기·파일 스토리지](chapters/chapter-10.md)의 첫 개념부터 시작한다.
+### 2026-11-25 — Chapter 10 완료
+
+- Cloud Storage의 버킷·객체와 VM 로컬 저장소를 구분했다. MIG의 다른 VM으로 요청이 전달되거나 VM이 재생성될 때 로컬 업로드 파일을 사용할 수 없는 문제를 설명했다.
+- 블록·객체·파일 스토리지의 접근 방식을 비교했다. 공유 NFS에는 Filestore, 기존 Windows 앱의 SMB 공유에는 Google Cloud NetApp Volumes를 선택했고, 대규모 병렬 파일 처리에 사용하는 Managed Lustre도 다뤘다.
+- 저장 위치와 저장 등급을 구분했다. Standard·Nearline·Coldline·Archive의 접근 빈도, 최소 저장 기간과 데이터 검색 요금을 다뤘다. Coldline의 90일이 최소 요금 계산 기준임을 보완하고, Archive도 필요할 때 바로 조회할 수 있음을 확인했다.
+- Lifecycle의 `age`가 객체 생성 시점부터 계산됨을 보완했다. 생성 후 30일에 Nearline으로 전환하고 추가로 180일을 보관하는 예에서 삭제 조건을 `age: 210`으로 계산했다. 보존 정책이 적용되는 동안에는 보존 기간을 채우기 전의 Lifecycle 삭제가 제한됨을 설명했다.
+- 소프트 삭제 기간이 7일인 객체를 삭제 후 3일에 복구할 수 있고, 삭제 상태로 보관하는 동안에도 저장 요금이 발생함을 설명했다.
+- Uniform bucket-level access의 IAM 기반 권한 관리와 Public access prevention의 공개 방지 역할을 구분했다. 공개 방지를 공개 허용 기능으로 해석한 부분을 보완했고, 공개 방지를 적용해도 특정 개발팀 그룹의 IAM 읽기 권한으로 접근할 수 있다고 답했다.
+- 실습에서는 Lifecycle JSON의 `age: 30`과 `matchesStorageClass: ["STANDARD"]` 조건을 읽었다. 생성 후 40일 된 Coldline 객체는 현재 등급 조건을 충족하지 않아 Nearline 전환 대상이 아님을 확인했다. 실제 버킷 생성·객체 업로드·다운로드·내용 비교·리소스 정리는 미실행이다.
+- 시험형 3문항의 첫 선택은 모두 정답이었다. 3번 후 보존 정책의 삭제·덮어쓰기 제한과 Lifecycle의 자동 변경·삭제 기능을 추가 설명으로 복습했다.
+
+복습할 내용은 Lifecycle의 누적 `age`, 최소 저장 기간의 요금 기준과 보존 정책의 삭제 제한, IAM 공개 권한과 Public access prevention의 관계다.
+
+다음 학습은 [Chapter 11 관계형 DB·Cloud SQL·Spanner·AlloyDB](chapters/chapter-11.md)의 첫 개념부터 시작한다.
